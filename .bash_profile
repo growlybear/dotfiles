@@ -10,13 +10,16 @@ done;
 unset file;
 
 # Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
+# This is a bash built-in, but errors in zsh - commenting out
+# shopt -s nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
-shopt -s histappend;
+# This is a bash built-in, but errors in zsh - commenting out
+# shopt -s histappend;
 
 # Autocorrect typos in path names when using `cd`
-shopt -s cdspell;
+# This is a bash built-in, but errors in zsh - commenting out
+# shopt -s cdspell;
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
@@ -46,3 +49,9 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+
+# Carried over from existing .bash_profile
+# Path setting from .profile now in .path
+# [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
