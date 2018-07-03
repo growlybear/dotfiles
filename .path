@@ -1,4 +1,11 @@
+# Include Python scripts in path - cf. https://github.com/awslabs/aws-sam-cli
+# Find your Python User Base path (where Python --user will install packages/scripts)
+USER_BASE_PATH=$(python -m site --user-base)
 
+# Update your preferred shell configuration
+## Standard bash --> ~/.bash_profile
+## ZSH           --> ~/.zshrc
+export PATH=$PATH:$USER_BASE_PATH/bin
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # Carried over from existing .profile
