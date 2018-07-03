@@ -24,6 +24,8 @@ alias ga="git add"
 alias gs="git status"
 alias gd="git diff"
 alias gdc="git diff --cached"
+# cf. https://stackoverflow.com/questions/33159394/ignore-all-whitespace-changes-with-git-diff-between-commits/33159593
+alias gdw="git diff -w --word-diff-regex=[^[:space:]]"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
