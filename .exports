@@ -36,3 +36,9 @@ export GPG_TTY=$(tty);
 # Specify Java 8 for React Native development
 # cf. https://github.com/facebook/react-native/issues/17688
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/
+
+# https://facebook.github.io/react-native/docs/getting-started.html
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
