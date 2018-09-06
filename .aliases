@@ -28,6 +28,7 @@ alias gdc="git diff --cached"
 # cf. https://stackoverflow.com/questions/33159394/ignore-all-whitespace-changes-with-git-diff-between-commits/33159593
 alias gdw="git diff -w --word-diff-regex=[^[:space:]]"
 alias k="kubectl"
+alias pwc="pwd | pbcopy"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
