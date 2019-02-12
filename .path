@@ -2,6 +2,10 @@
 # Find your Python User Base path (where Python --user will install packages/scripts)
 USER_BASE_PATH=$(python -m site --user-base)
 
+# Prefer Python3 over system Python2
+# cf. https://stackoverflow.com/questions/5157678/how-do-i-use-brew-installed-python-as-the-default-python
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
 # Update your preferred shell configuration
 ## Standard bash --> ~/.bash_profile
 ## ZSH           --> ~/.zshrc
