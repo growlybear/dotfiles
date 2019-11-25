@@ -114,3 +114,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/allami/.sdkman"
+[[ -s "/Users/allami/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/allami/.sdkman/bin/sdkman-init.sh"

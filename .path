@@ -11,6 +11,8 @@ export PATH=/usr/local/opt/python/libexec/bin:$PATH
 ## ZSH           --> ~/.zshrc
 export PATH=$PATH:$USER_BASE_PATH/bin
 
+export PATH="$HOME/.jenv/bin:$PATH"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # Carried over from existing .profile
 export PATH="$PATH:$HOME/.rvm/bin"
